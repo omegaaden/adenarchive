@@ -12,6 +12,26 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aden's Archive</title>
+ 
+  <script type="text/javascript">
+    let isSidebarCollapsed = false;
+
+    function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar");
+    const main = document.querySelector(".main");
+
+    if (isSidebarCollapsed) {
+        sidebar.classList.remove("collapsed");
+        main.classList.remove("collapsed");
+    } else {
+        sidebar.classList.add("collapsed");
+        main.classList.add("collapsed");
+    }
+
+    isSidebarCollapsed = !isSidebarCollapsed;
+    }
+    </script> 
+ 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
