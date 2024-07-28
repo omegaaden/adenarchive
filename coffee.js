@@ -1,4 +1,4 @@
-let isSidebarCollapsed = false;
+/*let isSidebarCollapsed = false;
 
 function toggleSidebar() {
   const sidebar = document.getElementById("sidebar");
@@ -13,4 +13,19 @@ function toggleSidebar() {
   }
 
   isSidebarCollapsed = !isSidebarCollapsed;
+}*/
+
+function showPage(pageId) {
+    const pages = document.querySelectorAll('.page');
+    pages.forEach(page => {
+        page.classList.remove('active');
+        if (page.id === pageId) {
+            page.classList.add('active');
+        }
+    });
 }
+
+// Set the initial page to be displayed
+document.addEventListener('DOMContentLoaded', () => {
+    showPage('home');
+});
