@@ -1,4 +1,4 @@
-/*body {
+body {
     background-color: #222;
     color: white;
     font-family: 'Courier New', monospace;
@@ -73,71 +73,4 @@
   
   p {
     line-height: 1.6;
-  }*/
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-main {
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-p {
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.page {
-    display: none;
-}
-
-.page.active {
-    display: block;
-}
+  }
